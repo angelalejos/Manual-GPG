@@ -37,7 +37,7 @@ Tras generar las claves podemos verlas con el comando gpg -k que nos muestra nue
 
 El objetivo de esta pareja de claves es que cualquiera nos pueda mandar un archivo cifrado que solo veremos nosotros y esto se hace difundiendo la clave pública que acabamos de crear (la pública, nunca la privada), para exportarla en un archivo usaremos el comando gpg -output [archivo destino] --export [ID de a clave pública] (la clave pública generada antes tiene la ID 18384645).
 
-        ~/gpg$ gpg --export 18384645 | base64 > terraform.pub
+        ~/gpg$ gpg --export 18384645 | base64 > examplefile.pub
 
 # Descifrar un archivo con la clave privada
 
