@@ -43,4 +43,4 @@ El objetivo de esta pareja de claves es que cualquiera nos pueda mandar un archi
 
 Y ahora es el momento de descifrar con nuestra clave privada el documento tras recibirlo,  introduciendo la contraseña que creamos para salvaguardar la clave privada.
         
-        ~/gpg$ --passphrase $decodeme --batch -q --decrypt password_file
+        ~/gpg$ --passphrase $decodeme --batch -q --decrypt examplefile.pub
